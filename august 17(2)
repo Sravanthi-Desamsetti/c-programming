@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	 int i,n,sum=0,k;
+	 printf("enter the size of an array : ");
+	 scanf("%d",&n);
+	 int arr[n];
+	 printf(" values  in array: \t");
+	 for(i=0;i<n-1;i++)
+	 {
+	     scanf("%d",&arr[i]);
+	     sum=sum+arr[i];
+	 }
+	 k = (n*(n+1))/2 - sum;
+	 printf("missing number is = %d", k);
+	return 0; 
+}
+output:
+enter the size of an array : 6
+values  in array: 	1
+2
+3
+5
+6
+missing number is = 4
