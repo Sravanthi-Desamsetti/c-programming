@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,temp=0;
+    int arr[]={10,20,30,40,50};
+    int len=sizeof(arr)/sizeof(int);
+    for(i=0;i<len;i++)
+    {
+        for(j=i+1;j<len;j++)
+        {
+            if(arr[i]==arr[j])
+                temp++;
+         }
+    }
+    if (temp==0)
+       printf("UNIQUE");
+    else
+       printf("DUPLICATE");
+       return 0;
+}
+output:
+UNIQUE
