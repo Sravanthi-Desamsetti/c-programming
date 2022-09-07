@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int f1,f2,f3,n;
+    printf("enter the number to check:");
+    scanf("%d",&n);
+    f1=0;
+    f2=1;
+    if(n==0)
+    printf("Fiboncii series");
+    f3=f1+f2;
+    while(f3<n)
+    {
+       f1=f2;
+       f2=f3;
+       f3=f1+f2;
+    }
+    if(f3==n)
+    printf("Yes");
+    else
+    printf("No");
+    return 0;
+}
+
+enter the number to check:6
+No
